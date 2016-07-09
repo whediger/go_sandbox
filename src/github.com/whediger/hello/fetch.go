@@ -25,6 +25,6 @@ func main() {
 		if _, err := io.CopyBuffer(os.Stdout, resp.Body, buf); err != nil {
 			log.Fatal(err)
 		}
-		fmt.Printf("%s", os.Stdout)
+		fmt.Println("HTTP status: " + resp.Status)
 	}
 }
