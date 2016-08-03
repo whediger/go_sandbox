@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>movie form</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+  </head>
+  <body>
+
+    <h1>Galvanize Movies</h1>
+
+    <form class="movieForm" action="#" method="post">
+      <div>
+        <label for="titleOut">Movie Title: </label>
+          <input id="titleOut" type="text">
+      </div>
+      <div>
+      <label for="genreOut">Movie Genre:</label>
+        <input id="genreOut" type="text">
+      </div>
+      <div>
+      <label for="descriptionOut">Decription: </label>
+        <input id="descriptionOut" type="textfield" rows="10">
+      </div>
+      <div>
+      <label for="coverPicture">Cover Picture: </label>
+        <input id="coverPicture" type="text">
+      </div>
+      <div>
+        <label for="rating">Select a rating: </label>
+        <select id="rating" class="ratingSelect">
+          <option>R</option>
+          <option>PG-13</option>
+          <option>PG</option>
+          <option>G</option>
+          <option>NR</option>
+        </select>
+      </div>
+      <input id="submit" type="button" value="submit">
+    </form>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

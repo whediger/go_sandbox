@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: white;
+  
+
+}
+
+.colorContainer {
+  display: flex;
+  flex-direction: row;
+}
+.colors {
+  height: 200px;
+  width: 200px;
+  font-size: 2em;
+}
+
+#a {background-color: #2E576B;}
+#b {background-color: #BF4040;}
+#c {background-color: #243842;}
+#d {background-color: #EBCFC2;}
+#e {background-color: #423824;}
+#f {background-color: #1A1A1A;}

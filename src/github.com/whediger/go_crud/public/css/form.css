@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  background-color: #243842;
+  color: #EBCFC2;
+}
+
+.movieForm {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  color: #BF4040;
+}
+
+div {
+  margin: 20px;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+}

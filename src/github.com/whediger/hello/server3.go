@@ -14,7 +14,15 @@ var count int
 func main() {
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/count", counter)
+	http.HandleFunc("/wes", wes)
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+}
+
+//this page serves a page with my name as a title
+func wes(w http.ResponseWriter, r *http.Request) {
+	mu.Lock()
+	fmt.Fprintf(w, "this is wes's page")
+	mu.Unlock()
 }
 
 //counter echoes the number of calls so far
