@@ -32,20 +32,6 @@ func loadPage(title string) *Page {
 	return &Page{Title: title, Body: body}
 }
 
-// //this page serves a page with my name as a title
-
-//func wes.handle(http.FileServer("/", http.Dir("./static")))
-
-// func wes(w http.ResponseWriter, r *http.Request) {
-// 	title := r.URL.Path["index"]
-// 	p, _ := loadPage(title)
-// 	fmt.Fprint(w, "<h1>%s</h1><div>%s</div>", p.Title, p.Body)
-//
-// 	mu.Lock()
-// 	fmt.Fprintf(w, "this is wes's page")
-// 	mu.Unlock()
-// }
-
 //counter echoes the number of calls so far
 func counter(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()
